@@ -1,0 +1,32 @@
+# Core dependencies for LLM evaluation framework
+promptfoo>=0.60.0
+
+# Fine-tuned model dependencies (inherit from parent project)
+transformers>=4.35.0
+datasets>=2.14.0
+torch>=2.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Data processing
+pandas>=2.0.0
+pyyaml>=6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Interactive visualizations (optional)
+plotly>=5.15.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# API clients for LLM providers
+openai>=1.0.0
+anthropic>=0.7.0
+
+# Utilities
+tqdm>=4.65.0
+python-dateutil>=2.8.0

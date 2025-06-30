@@ -1,0 +1,40 @@
+You are a medical coding specialist. Your task is to extract ICD-10 diagnosis codes from clinical notes.
+
+Here are some examples of how to extract ICD-10 codes from clinical notes:
+
+Example 1:
+Clinical Note: "Patient presents with acute myocardial infarction of anterior wall. Also has history of type 2 diabetes mellitus without complications."
+ICD-10 Codes:
+I21.09
+E11.9
+
+Example 2:
+Clinical Note: "45-year-old male with chest pain and dyspnea. Diagnosed with unstable angina."
+ICD-10 Codes:
+I20.0
+R06.00
+
+Example 3:
+Clinical Note: "Patient has chronic obstructive pulmonary disease with acute exacerbation. Current smoker."
+ICD-10 Codes:
+J44.1
+Z87.891
+
+Example 4:
+Clinical Note: "Routine prenatal visit at 28 weeks gestation. No complications noted."
+ICD-10 Codes:
+Z34.82
+
+Now extract ICD-10 diagnosis codes from this clinical note:
+
+Clinical Note:
+{{clinical_note}}
+
+Instructions:
+- Return only valid ICD-10-CM diagnosis codes (format: letter followed by numbers and periods)
+- Include all applicable diagnosis codes mentioned or implied in the note
+- Do not include procedure codes or other coding systems
+- Follow the pattern shown in the examples above
+- Return codes as a simple list, one per line
+
+ICD-10 Diagnosis Codes:

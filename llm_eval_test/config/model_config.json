@@ -1,0 +1,42 @@
+{
+  "fine_tuned_model": {
+    "model_dir": "../model_output_demo",
+    "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+    "max_length": 512,
+    "threshold": 0.5,
+    "batch_size": 32,
+    "device": "auto"
+  },
+  "evaluation_settings": {
+    "sample_size": 100,
+    "test_split_ratio": 0.2,
+    "random_seed": 42,
+    "use_cache": true
+  },
+  "llm_providers": {
+    "openai": {
+      "models": ["gpt-4-turbo-preview", "gpt-3.5-turbo"],
+      "temperature": 0.1,
+      "max_tokens": 1000,
+      "rate_limit": 60
+    },
+    "anthropic": {
+      "models": ["claude-3-sonnet-20240229", "claude-3-haiku-20240307"],
+      "temperature": 0.1,
+      "max_tokens": 1000,
+      "rate_limit": 50
+    }
+  },
+  "metrics": {
+    "primary": ["micro_f1", "macro_f1", "top_k_accuracy"],
+    "secondary": ["precision", "recall", "coverage"],
+    "top_k_values": [1, 5, 10],
+    "confidence_thresholds": [0.3, 0.5, 0.7]
+  },
+  "output_formats": {
+    "json": true,
+    "csv": true,
+    "markdown": true,
+    "html": true
+  }
+}

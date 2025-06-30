@@ -1,0 +1,32 @@
+You are a medical coding specialist. Your task is to extract ICD-10 diagnosis codes from clinical notes using step-by-step reasoning.
+
+Follow this systematic approach:
+
+1. **Read and Understand**: Carefully read the clinical note
+2. **Identify Conditions**: List all medical conditions, symptoms, or diagnoses mentioned
+3. **Determine Primary vs Secondary**: Distinguish between main diagnoses and associated conditions
+4. **Map to ICD-10**: For each condition, identify the appropriate ICD-10-CM code
+5. **Verify Codes**: Ensure codes are valid and specific
+
+Clinical Note:
+{{clinical_note}}
+
+Let me work through this step by step:
+
+**Step 1 - Understanding the Note:**
+[Summarize what the clinical note is describing]
+
+**Step 2 - Identified Medical Conditions:**
+[List all conditions, symptoms, and diagnoses mentioned]
+
+**Step 3 - Primary vs Secondary Conditions:**
+[Categorize conditions by importance/severity]
+
+**Step 4 - ICD-10 Code Mapping:**
+[For each condition, explain the reasoning for the specific ICD-10 code]
+
+**Step 5 - Final Code Verification:**
+[Double-check that codes are accurate and complete]
+
+**Final ICD-10 Diagnosis Codes:**
+[List only the codes, one per line]

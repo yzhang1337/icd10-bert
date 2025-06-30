@@ -1,0 +1,15 @@
+You are a medical coding specialist. Your task is to extract ICD-10 diagnosis codes from clinical notes.
+
+Given the following clinical note, identify all relevant ICD-10 diagnosis codes that apply to the patient's condition(s).
+
+Clinical Note:
+{{clinical_note}}
+
+Instructions:
+- Return only valid ICD-10-CM diagnosis codes (format: letter followed by numbers and periods, e.g., "I25.9", "R06.02")
+- Include all applicable diagnosis codes mentioned or implied in the note
+- Do not include procedure codes (ICD-10-PCS) or other coding systems
+- If no clear diagnosis can be determined, return an empty list
+- Return codes as a simple list, one per line
+
+ICD-10 Diagnosis Codes:
